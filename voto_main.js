@@ -13,4 +13,11 @@ verificar.addEventListener('click', () =>{
     cidadao.idade = idade
     cidadao.titulo = titulo
     console.log("instância do objeto", cidadao)
+
+  let mensagem = cidadao.verificavoto()
+  resposta.innerHTML = ''
+  resposta.innerHTML += `O eleitor ${cidadao.nome}<br>` 
+  resposta.innerHTML += `tem ${cidadao.idade} anos de idade <br>`
+  resposta.innerHTML += mensagem + '<br>'
+
 })
